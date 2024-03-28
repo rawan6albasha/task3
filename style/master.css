@@ -110,12 +110,15 @@ header .hero .imge::after {
     width: 234px;
     height: 182px;
     background-color: #ffd3f8;
-    
     margin-left: -305px;
     border-radius: 50%;
     margin-top: 156px;
     position: absolute;
     box-shadow: 0px 0px 20px 20px #610252;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .iconeG::after {
@@ -332,8 +335,16 @@ footer .footer2{
         width: 23em;
        
     }
-    main .contact form input, main .contact form textarea {
+    main .contact form input:hover
+    ,main .contact form textarea:hover
+    ,  main .contact form input:focus-visible
+    ,main .contact form textarea:focus-visible{
         width: 345px;
+    }
+    main .contact form input, main .contact form textarea {
+ 
+        width: 342px;
+       
     }
     header .hero .imge img {
         width: 377px;
@@ -358,6 +369,9 @@ header nav {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     main .portfolio .skills {
         width: 47em;
+    }
+    main .contact form input, main .contact form textarea {
+        width: 362px;
     }
     
 }
